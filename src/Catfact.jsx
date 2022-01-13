@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import MouseParticles from 'react-mouse-particles'
 
 const fetchData = async (url) => {
   const response = await fetch(url);
@@ -39,7 +38,7 @@ function App() {
       </button>
       <p>Fact:</p>
       <p>{value.fact}</p>
-      <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
+      
     </div>
     
   );
