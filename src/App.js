@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
 import MouseParticles from 'react-mouse-particles'
 
-const fetchData = async (url) => {
-  const response = await fetch(url);
-  const data = await response.json();
-  return data;
-}
 
 function App() { 
   const [value, setValue] = useState({
